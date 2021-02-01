@@ -1,7 +1,7 @@
 from pytube import YouTube
 from moviepy.editor import *
 import os, shutil
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 import speech_recognition as sr
 
 app = Flask(__name__)
