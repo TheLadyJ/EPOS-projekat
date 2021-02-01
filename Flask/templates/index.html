@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Recognition in Python</title>
+</head>
+
+<body>
+    <div id="speechContainer">
+        <h1>Enter a Youtube video link:</h1>
+        <form name="passURL" method="POST">
+            <input type="url" name="url">
+            <br>
+            <input type="submit" value="Transcribe">
+        </form>
+
+        {% if transcript != "" %}
+        <div id="speechTranscriptContainer">
+            <h1>Transcript</h1>
+            <p>{{transcript}}</p>
+        </div>
+        {% endif %}
+
+    </div>
+    
+</body>
+</html>
