@@ -5,11 +5,10 @@ import speech_recognition as sr
 
 def get_mp3():
     url=input("Enter a Youtube link:")
-    output="wav"
     print("Converting...")
 
     mp4 = YouTube(url).streams.get_highest_resolution().download()
-    mp3 = mp4.split(".mp4",1)[0] + f".{output}"
+    mp3 = mp4.split(".mp4",1)[0] + ".wav"
 
     video_clip = VideoFileClip(mp4)
     audio_clip = video_clip.audio
