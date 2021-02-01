@@ -15,6 +15,7 @@
             <input type="submit" value="Transcribe">
         </form>
 
+        <!-- U slucaju da promenljiva transcript nema vrednost, naslov Transcript se ne prikazuje (kao ni paragraf u kome bi bio odgovarajuci tekst) -->
         {% if transcript != "" %}
         <div id="speechTranscriptContainer">
             <h1>Transcript</h1>
