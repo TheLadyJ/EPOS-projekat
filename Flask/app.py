@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 import speech_recognition as sr
 
 app = Flask(__name__)
-#Milica je bila ovde
+
 
 @app.route("/", methods=["GET", "POST"])
 def index():
